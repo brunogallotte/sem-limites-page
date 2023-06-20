@@ -1,0 +1,43 @@
+@use 'variables';
+
+.hero {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../images/img1.jpg);
+    min-height: 700px;
+    background-size: cover;
+    margin-top: -80px;
+
+
+    &__content {
+        max-width: 1024px;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+
+        &__box-text {
+            max-width: 512px;
+            width: 100%;
+            font-size: 48px;
+            color: variables.$principalColor;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+        }
+
+        &__box-video {
+            display: flex;
+            justify-content: right;
+        }
+    }
+}
+
+.highlight {
+    color: variables.$elementsColor;
+}
+
+video {
+    width: 90%;
+    border-radius: 16px;
+}
