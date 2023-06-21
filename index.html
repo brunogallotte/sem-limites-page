@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/styles/main.css">
     <link href="https://api.fontshare.com/v2/css?f[]=gambetta@400&f[]=general-sans@600&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Limitless - NZT</title>
 </head>
 <body>
@@ -35,15 +39,32 @@
         </div>
     </header>
     <section class="hero">
+        <video src="./dist/images/videoplayback.mp4" autoplay muted></video>
         <div class="hero__content">
-            <div class="hero__content__box-text">
-                <h1>Improve your cognitive<span class="highlight">.</span></h1>
+            <div class="hero__content__box-text ">
+                <h1 class="animate__animated animate__fadeInLeft animate__delay-1s">Improve your cognitive<span class="highlight">.</span></h1>
             </div>
-            <div class="hero__content__box-video">
-                <video src="./dist/images/videoplayback.mp4" autoplay muted></video>
+            <div class="hero__content__box-news">
+                <h2 style="font-family: 'Gambetta', serif;">"Não tenho delírios de grandeza. Tenho uma receita para a grandeza."</h2>
             </div>
         </div>
     </section>
+    <section class="news">
+        <div class="news__content">
+            <ul class="news__content__box">
+                <li class="news__content__box__item">
+                    <span>Disclaymer</span>
+                    <h2>Pras picas.</h2>
+                    <img src="http://via.placeholder.com/300x300" alt="">
+                    <h3>Picas voadoras</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolore aspernatur magni sunt iste enim incidunt omnis, laborum iusto error mollitia doloribus, porro labore eius fugiat aperiam obcaecati repellendus! Eligendi?
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./dist/scripts/main.js"></script>
 </body>
 </html>
