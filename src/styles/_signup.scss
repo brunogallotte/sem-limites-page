@@ -4,9 +4,8 @@
     background-color: rgb(231, 208, 2);
 
     @media (max-width: 768px) {
-        width: 116vh;
-        padding-top: 128px;
-        padding-bottom: 128px;
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
 
     &__content {
@@ -39,7 +38,7 @@
                 font-size: 42px;
 
                 @media (max-width: 768px) {
-                    font-size: 72px;
+                    font-size: 36px;
                 }
             }
 
@@ -49,7 +48,7 @@
                 border-bottom: 2px solid #000;
 
                 @media (max-width: 768px) {
-                    font-size: 32px;
+                    font-size: 16px;
                 }
             }
         }

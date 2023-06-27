@@ -7,10 +7,6 @@
     margin-top: -80px;
     background-color: black;
 
-    @media (max-width: 768px) {
-        width: 116vh;
-    }
-
     &__content {
         display: flex;
         justify-content: space-between;
@@ -24,19 +20,27 @@
 
         @media (max-width: 768px) {
             padding: 10%;
+            flex-direction: column;
+            justify-content: center;
         }
 
         &__box-text {
+            margin-top: 16px;
             max-width: 512px;
             width: 100%;
             font-size: 48px;
             color: variables.$principalColor;
             text-transform: uppercase;
             text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+
+            @media (max-width: 768px) {
+                font-size: 32px;
+            }
         }
 
         &__box-news {
             padding: 16px;
+            margin-top: 64px;
             width: 300px;
             backdrop-filter: blur(16px);
             color: #fff;
