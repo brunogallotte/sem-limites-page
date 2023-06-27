@@ -12,6 +12,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            max-width: 120vh;
+            width: 116vh;
+            background-color: #000;
+        }
     }
 
     &__brand {
@@ -20,6 +28,11 @@
         font-size: 12px;
         letter-spacing: 4px;
         color: #c4c4c4;
+        
+        @media (max-width: 768px) {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
     }
 
     &__navbar {
@@ -42,11 +55,21 @@
                     color: variables.$secondaryColor;
                     letter-spacing: 2px;
                     border-top: 8px solid transparent;
+
+                    @media (max-width: 768px) {
+                        font-size: 24px;
+                    }
                     
                     &:hover {
                         border-top: 8px solid rgb(231, 208, 2);
                         font-size: 15px;
+                        color: #fff;
+                        transition: color .5s ease;
                         transition: font-size 1s ease;
+
+                        @media (max-width: 768px) {
+                            font-size: 24px;
+                        }
                     }
                 }
             }
@@ -60,6 +83,11 @@
         background-color: variables.$elementsColor;
         text-transform: uppercase;
         cursor: pointer;
+
+        @media (max-width: 768px) {
+            padding: 16px;
+            font-size: 24px;
+        }
 
         &:hover {
             background-color: variables.$elementsColorHover;

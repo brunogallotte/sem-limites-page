@@ -1,13 +1,97 @@
+@use 'variables';
+
 .news {
-    max-width: 1024px;
-    margin: 0 auto;
-    display: flex;
+    min-height: 800px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.397)), url(../images/img3.jpg);
+    padding-top: 64px;
+    @media (max-width: 768px) {
+        width: 116vh;
+    }
 
     &__content {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 10px;
 
         &__box {
-            
+            display: flex;
+            align-items: center;
+            width: 1024px;
+            justify-content: space-around;
+            border-radius: 8px;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
             &__item {
+                display: flex;
+                margin-right: 16px;
+                max-width: 300px;
+                flex-direction: column;
+                align-items: center;
+                padding: 16px;
+                align-items: center;
+                backdrop-filter: blur(16px);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+                @media (max-width: 768px) {
+                    max-width: 900px;
+                    width: 100%;
+                }
+
+                &:hover {
+                    box-shadow: 0px 0px 20px 1px #fff6763f;
+                    transition: box-shadow 1s ease;
+                }
+
+                &__section-title {
+                    font-size: 32px;
+                    color: variables.$principalColor;
+
+                    @media (max-width: 768px) {
+                        font-size: 72px;
+                        padding-left: 52px;
+                    }
+                }
+
+                &__subtitle{
+                    color:variables.$secondaryColor;
+
+                    @media (max-width: 768px) {
+                        font-size: 24px;
+                        padding-left: 52px;
+                    }
+                }
+
+                &__img {
+                    margin-top: 8px;
+                    margin-bottom: 24px;
+
+                    @media (max-width: 768px) {
+                        width: 100%;
+                    }
+                }
+
+                &__title-text {
+                    color: variables.$principalColor;
+                    margin-bottom: 4px;
+                    border-bottom: 2px solid yellow;
+
+                    @media (max-width: 768px) {
+                        font-size: 64px;
+                    }
+                }
+
+                &__text {
+                    margin-top: 8px;
+                    color: variables.$secondaryColor;
+                    text-align: center;
+
+                    @media (max-width: 768px) {
+                        font-size: 48px;
+                    }
+                }
                 
             }
         }
