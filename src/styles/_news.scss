@@ -11,6 +11,13 @@
         margin: 0 auto;
         padding: 10px;
 
+        @media (max-width: 1023px) {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 500px;
+        }
+
         &__box {
             display: flex;
             align-items: center;
@@ -20,9 +27,15 @@
 
             @media (max-width: 768px) {
                 flex-direction: column;
-                justify-content: left;
+                justify-content: center;
                 width: 100%;
-                overflow: hidden;
+            }
+
+            @media (max-width: 1023px) {
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                max-width: 500px;
             }
 
             &__item {
@@ -36,10 +49,15 @@
                 backdrop-filter: blur(16px);
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
+                @media (max-width: 1023px) {
+                    max-width: 500px;
+                }
+                
                 @media (max-width: 768px) {
                     max-width: 300px;
                     width: 100%;
                 }
+
 
                 &:hover {
                     box-shadow: 0px 0px 20px 1px #fff6763f;

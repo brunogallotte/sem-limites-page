@@ -18,6 +18,13 @@
         position: relative;
         z-index: 2;
 
+        
+        @media (max-width: 1023px) {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
         @media (max-width: 768px) {
             padding: 10%;
             flex-direction: column;
